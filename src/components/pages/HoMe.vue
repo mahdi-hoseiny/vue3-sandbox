@@ -3,7 +3,7 @@
     <div class="container mt-2">
       <div class="row">
         <div class="col-md-4">
-          <h4>lorem</h4>
+          <h4>Lorem ipsum dolor sit amet consectetur.</h4>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste at
             rerum quia tenetur aliquam voluptates magni, consequatur
