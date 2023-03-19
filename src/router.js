@@ -7,9 +7,10 @@ import usersSpa from './users/usersSpa.vue'
 import TemplateUsers from './users/TemplateUsers.vue'
 import ShowUsers from './users/ShowUsers.vue'
 
-import postsSpa from './posts/postsSpa.vue'
+import InDex from './posts/InDex.vue'
 import TemplatePosts from './posts/TemplatePosts.vue'
 import ShowPost from './posts/ShowPost.vue'
+import CreatePost from '@/posts/CreAte.vue'
 
 import CalCulater from './components/pages/CalCulater.vue'
 import PraCtice from './components/PraCtice/PraCtice.vue'
@@ -30,8 +31,9 @@ const routes = [
     ],
   },
   {
-    path: '/postsSpa', name: 'TemplatePosts', component: TemplatePosts, children: [
-      {path: '', name: 'post', component: postsSpa} ,
+    path: '/InDex', name: 'TemplatePosts', component: TemplatePosts, children: [
+      {path: '', name: 'post', component: InDex} ,
+      {path: 'Create', name: 'CreatePost', component: CreatePost} ,
       { path: ':id', name: 'postId', component: ShowPost },
     ],
   },

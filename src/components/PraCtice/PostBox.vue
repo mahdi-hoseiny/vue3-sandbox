@@ -1,6 +1,6 @@
 <template>
-      <div class="col-md-3 my-3">
-        <div class="card" style="width: 18rem">
+      <div class="col-md-4 align-item-center">
+        <div class="card">
           <div class="card-body text-center">
             <h5 class="card-title">Name : {{Persons.name}}</h5>
             <p class="mt-3">Last name : {{ Persons.lastname }}</p>

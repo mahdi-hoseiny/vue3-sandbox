@@ -1,8 +1,11 @@
 <template>
   <div class="container">
-    <div class="row">
+    <div class="row g-3">
 
-      <GmailInformation :inputname="inputname"/>
+      <GmailInformation :inputname="inputname" 
+      :changePasswordtitle="changePasswordtitle"
+      @sendData="changeData($event)"
+      />
 
       <PostBox v-for="(person , index) in Persons" :key="index" :Persons="person" />
 
@@ -24,7 +27,7 @@ export default {
   },
   data() {
     return {
-      inputname : 'mahdi' ,
+      inputname : 'Password' ,
       fruits: ["banana", "apple", "orange", "potato"],
     
       Persons:[
@@ -42,6 +45,10 @@ export default {
     };
   },
   methods: {
+    changePasswordtitle(){
+      this.inputname = "Password changed"
+      event.preventDefault()
+    },
     showData(event) {
       if (this.fruits == event) {
         this.fruits = ["banana", "apple", "orange", "potato"];
@@ -49,6 +56,10 @@ export default {
         this.fruits = event;
       }
     },
+    changeData(event){
+      this.inputname = event
+    },
+    
   },
 };
 </script>
