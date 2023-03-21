@@ -4,7 +4,11 @@
       <div class="row">
         <div class="col-md-4">
           <h4>Lorem ipsum dolor sit amet consectetur.</h4>
-          
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste at
+            rerum quia tenetur aliquam voluptates magni, consequatur
+            voluptatibus debitis maxime pariatur nobis? Rem, obcaecati.
+          </p>
           <router-link class="btn btn-light" :to="{ name: 'user' }">
             Users
           </router-link>
