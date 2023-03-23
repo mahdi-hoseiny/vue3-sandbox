@@ -9,12 +9,6 @@
             rerum quia tenetur aliquam voluptates magni, consequatur
             voluptatibus debitis maxime pariatur nobis? Rem, obcaecati.
           </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste at
-            rerum quia tenetur aliquam voluptates magni, consequatur
-            voluptatibus debitis maxime pariatur nobis? Rem, obcaecati.
-          </p>
-          <p>git stash 3</p>
           <router-link class="btn btn-light" :to="{ name: 'user' }">
             Users
           </router-link>

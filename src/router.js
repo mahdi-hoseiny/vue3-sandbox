@@ -31,7 +31,7 @@ const routes = [
     ],
   },
   {
-    path: '/InDex', name: 'TemplatePosts', component: TemplatePosts, children: [
+    path: '/posts', name: 'TemplatePosts', component: TemplatePosts, children: [
       {path: '', name: 'post', component: InDex} ,
       {path: 'Create', name: 'CreatePost', component: CreatePost} ,
       { path: ':id', name: 'postId', component: ShowPost },

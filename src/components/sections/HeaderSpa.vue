@@ -18,7 +18,7 @@
                   <router-link class="nav-link" to="/UsersSpa">Users</router-link>
                 </li>
                 <li class="nav-item">
-                  <router-link class="nav-link" to="/InDex">Posts</router-link>
+                  <router-link class="nav-link" to="/posts">Posts</router-link>
                 </li>
                 <li class="nav-item dropdown">
                   <button class="btn btn-light dropdown-toggle ms-md-2 fw-bold" data-bs-toggle="dropdown" aria-expanded="false">
