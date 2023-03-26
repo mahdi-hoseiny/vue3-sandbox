@@ -22,8 +22,9 @@
           <button type="submit" class="btn btn-dark my-3">Submit</button>
         </form>
       </div>
-      <PostBox  :formHistory="formhist" v-for="(index , formhist) in formHistory" :key="index"/>
-
+      <PostBox v-for="(formhist , index) in formHistory" :key="index" :formHistory="formhist" />
+      <ul>
+      </ul>
     </div>
   </div>
 </template>
@@ -74,7 +75,7 @@ export default {
           icon: "success",
           confirmButtonText: "Accept",
         });
-        this.formHistory.push(this.form);
+        this.formHistory.push(this.form.title);
         console.log(this.formHistory)
       }
     },
